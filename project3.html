@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage coffe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .img {
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../coffee.jpg") no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            max-width: 1200px;
+            height: 100vh;
+           
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            color: rgb(236, 209, 168);
+            max-width: 1200px;
+
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            margin: 10px 12px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .navbar ul li:hover {
+            color: orange;
+
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            color: rgb(236, 209, 168);
+        }
+
+        .navbar button {
+            background-color:  rgb(236, 209, 168);;
+            border-radius: 8px;
+            padding: 5px 20px;
+            margin: 10px  15px;
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar button:hover {
+            transform: translateY(-10px);
+        }
+
+        .coffe{
+            color: #fff;
+            position: relative;
+            top: 60px;
+            left: 20px;
+        }
+
+        .coffe h1{
+            font-size: 1rem;
+            font-family: Arial;
+            color: rgb(236, 209, 168);
+        }
+
+        .coffe p{
+             font-family: Arial;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .coffe button{
+            background-color: transparent;
+            color: rgb(236, 209, 168);
+            position: relative;
+            top: 20px;
+            padding: 7px;
+            border-radius: 8px;
+            width: 100px;
+            border: 3px solid  rgb(236, 209, 168) ;
+            transition: transform 0.3s;
+        }
+
+        .coffe button:hover{
+            transform: translateY(-10px);
+        }
+
+
+        .coffe .icon{
+            display: flex;
+            margin-top: 40px;
+        
+        
+            
+        }
+
+        .coffe .icon li{
+            m
+            font-size: 20px;
+            margin: 0 5px;
+            color: #fce2bc;
+            transition: transform 0.3s;
+            background-color: transparent;
+
+        }
+
+        .coffe .icon li:hover{
+            transform: translateY(-10px);
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <nav class="navbar">
+            <div class="logo">Coffee-logo</div>
+
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>products</li>
+                <li>contact</li>
+            </ul>
+            <button>more</button>
+
+        </nav>
+        <div class="coffe">
+        <h1>EVERYDAY<BR> IS COFFE DAY</h1>
+        <P>Maalin walbaa cabaa coffega<br>
+            aduunka ugu jeclahy coffega</P>
+        <button>Get Now</button>
+    
+    <div class="icon">
+        <li class="fa-brands fa-facebook"></li>
+        <li class="fa-brands fa-twitter"></li>
+        <li class="fa-brands fa-square-instagram"></li>
+        <li class="fa-brands fa-tiktok"></li>
+    </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
