@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sports</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: white;
+
+        }
+
+        .navbar{
+            width: 100%;
+            padding: 20px;
+        }
+
+        .navbar .container{
+            width: 80%;
+            margin: auto;
+        }
+
+        .container h2{
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: black
+            
+        }
+
+        .navbar .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        ul{
+            display: flex;
+            justify-self: flex-end;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+        }
+
+        ul li{
+            margin-left: 40px;
+            font-weight: 100;
+            font-size: 14px;
+
+        }
+
+        .cart{
+            margin-right: 30px;
+            font-size: 1rem;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 4px 20px;
+            cursor: pointer;
+        }
+
+        .main{
+            width: 100%;
+        
+        }
+
+        .main-container{
+            width: 85%;
+            margin: 50px auto;
+        }
+
+        .main .main-container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .main-container div{
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        .main-container h2{
+            color: #3881ba;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .main-container h1{
+            font-size: 30px;
+            margin: 15px 0;
+            color: black;
+        }
+
+        .main-container p{
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        .main-container button{
+            background-color: rgb(233, 118, 47);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 3px;
+            border: 1px solid orange;
+        }
+
+        .main .main-container img{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h2>Sports co-op</h2>
+
+            <ul>
+                <li>Home</li>
+                <li>Product</li>
+                <li>mempership</li>
+                <li>support us</li>
+                <li class="cart">Cart</li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <section class="main">
+        <div class="main-container"> 
+            <div>
+            <h2>Comfort of the year</h2>
+            <h1>We bring you the <br>best products</h1>
+            <p>Id irure commodo laborum cillum. Consequat consequat mollit sit ad occaecat  
+            Officia commodo ullamco quis amet ea incididunt do adipisicing magna.
+             In ad esse voluptate cupidatat irure laboris ad.</p>
+
+             <button>show me</button>
+
+            </div>
+
+            <img src="https://tse2.mm.bing.net/th/id/OIP.cXeLXuwv3XWIazdQO_talgHaHa?r=0&pid=ImgDet&w=193&h=193&c=7&dpr=1.4&o=7&rm=3">
+        </div>
+    </section>
+
+</body>
+
+</html>
