@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(232, 244, 251);
+            font-family: Arial;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .logo img{
+            height: 80px;
+            width: auto;
+            mix-blend-mode: multiply;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-self: center;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 0 5px;
+        }
+
+        .navbar ul {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            margin-top: -100px;
+        }
+
+        .navbar ul li {
+            margin-right: 30px;
+            list-style: none;
+            font-size: 14px ;
+            font-weight: bold;
+
+        
+
+        }
+
+        .menu {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            position: relative;
+        }
+
+        .menu .menu-container  {
+            display: flex;
+            height: 100%;
+            padding: 50px 70px;
+           
+            
+            
+        }
+
+        .menu .menu-container div {
+            margin-left: 30px;
+            margin-top: -70px;
+            
+        }
+
+        .menu-container div h3 {
+            margin: 10px 0;
+            color: black;
+        }
+
+        .menu-container div h1 {
+            margin: 15px 0;
+        }
+
+        .menu-container div button {
+            margin-top: 15px;
+            background-color: black;
+            color: aliceblue;
+            padding: 7px 15px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 50px;
+            border-top-left-radius: 0;
+        }
+
+        .menu-card {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .menu-card .card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDACAWGBwYFCAcGhwkIiAmMFA0MCwsMGJGSjpQdGZ6eHJmcG6AkLicgIiuim5woNqirr7EztDOfJri8uDI8LjKzsb/2wBDASIkJDAqMF40NF7GhHCExsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsb/wAARCADBAMEDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAUGAgMEAf/EADIQAQACAgEABwUIAgMAAAAAAAABAgMEEQUGEiExQVETcZGh0SIyQmFigcHwIzNSguH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5ekN2mjrTlt32nupX/AJS261L48FIyW7WTjm8+s+YNoAAAAAAAAAAOPP0rpa/39isz6U+1PyB2CCz9ZcccxgwWt+d54YY8nTPSPfWY18U+fHZ+HmCeyZKYq9rJetKx52niHPTpDBlydjB28088TOOvNa++fBy6/QmGloybV77OT1vPd8Pqk61rSsVrEVrHhERxEA9AAAAAAY3tWlJvaYitY5mZ8oZIPrJuezxV1aT33+1f3eUf30BH33LdIdNYLT/qjLWKVn05/lbFCw5Jw5qZa/epaLRz+S86+amxgplxzzS8cwDYAADDLlx4a9rLkrSvraeAZiMz9O6OLwvbLPpSv1R2frJmt3YMNKR62ntSCyNGfc1tbn22alJ9Jnv+Co5+k93PzGTYvxPlWezHycgLRn6xatOYxUvln3dmP7+yO2OsO3k5jFFMMeXEcz8/ojtfVz7VuzgxWvPnxHdH7prT6ueFtvJ/0p/Mghsmfa3LxW+TLltM91eZn4QkNTq/s5uLZ5jDX08bfBY9bUwatezgxVp6zEd8++W4HFqdFampxNMXavH4798u0AAAAAAAAAFH39idrdy5p8LW7vd5fJdNiZjXyzXx7E8fBQwHXo9JbGhM+ytE0meZpbviXIAsePrLimP8uves/ptE/Rhm6y90xh1u/wApvb+I+qvgJDP01vZomPa+zifLHHHz8XDe9slpte02tPjMzzMsXta2vaK1ibTPhERyDwS2n0BtZ+LZuMFP1d9vh9U3p9EampxaMftLx+O/eCt6nRe3t8Tjxdmk/jv3R/6m9Tq/rYuLZ7Tmt6eFUwAxpSuOkUpWK1jwiscRDIAAAAAAAAAAAAAFN6V6Pvo7E90zhtP2Lfx71yY5MdMtJpkrFqz4xMcxIKCLRsdXdXJMzhvfFM+X3o/v7tFerNYt9vamY9Ipx/IK83a+rn2r9nBitefyjuj3z5LRr9B6OHvnHOWfXJPPy8EhSlaVitKxWseERHEAgNTq5M8W28vH6KePxTWtp6+pXjBirT8/Of3bwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/9k="/> 
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>HOME</li>
+                <li>MEN</li>
+                <li>WOMEN</li>
+                <li>COLLECTION</li>
+                <li>CONTACT</li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <section class="menu">
+        <div class="menu-container">
+
+            <div>
+                <h3>Explore Limited Edition</h3>
+                <h1>NIKE LIMITED <br>EDITION</h1>
+
+                <P>Nulla consectetur sint veniam deserunt irure.<br>
+                    cillum ipsum consectetur consequat.<br> Tempor quis minim minim aliquip elit.
+                    <br>est reprehenderit cillum ipsum Lorem aute amet.<br>
+                </p>
+
+                <button>Shop now</button>
+            </div>
+
+            <div>
+
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.PK9Y7x6ioPP-uxrqc0V_egHaHa?r=0&pid=ImgDet&w=193&h=193&c=7&dpr=1.4&o=7&rm=3">
+                <h2>NILE AIR MAX 1</h2>
+                <P>men's shoes colour:white</P>
+                <h3>$14995</h3>
+
+
+
+                <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.CABkvstYyYGfNJlDuP-87gHaHa?r=0&pid=ImgDet&w=193&h=193&c=7&dpr=1.4&o=7&rm=3">
+                <h2>NILE AIR MAX 1</h2>
+                <P>men's shoes colour:white</P>
+                <h3>$14995</h3>
+
+
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.QeylKSX74lLqw3aJA7bhEgHaHa?r=0&pid=ImgDet&w=193&h=193&c=7&dpr=1.4&o=7&rm=3">
+                <h2>NILE AIR MAX 1</h2>
+                <P>men's shoes colour:white</P>
+                <h3>$14995</h3>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>

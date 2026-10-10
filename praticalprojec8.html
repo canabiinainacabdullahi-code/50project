@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(61, 63, 65);
+
+        }
+
+        .mine {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            color: white;
+            background: url("https://images.unsplash.com/photo-1790042281644-4e7637a957d7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+
+        }
+
+        .mine h1{
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .mine h2{
+            font-size: 1.7rem;
+            margin: 10px 0;
+
+
+        }
+
+        .daiteles{
+            margin: 20px 0px;
+            font-size: 1rem;
+        }
+
+        .daiteles p{
+            margin: 10px 0;
+        }
+
+        .daiteles i{
+            margin-right: 10px;
+          
+        }
+
+        .rvsp-btn{
+            display: inline-block;
+            background-color: rgb(234, 152, 45);
+            color: #faf9f8;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 4px 10px rgba(0,0,0,0.3);
+            margin-top: 20px;
+            animation: background 0.3s ease;
+        }
+
+        .rvsp-btn:hover{
+            background-color: aquamarine;
+        }
+
+
+
+
+
+        .container {
+            width: 100%;
+
+        }
+
+        .container h1 {
+            color: azure;
+            margin: 10px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .container form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .container input,
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            margin: 10px 0;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        button {
+            background-color: #ed914f;
+            color: aliceblue;
+            font-size: 1rem;
+            cursor: pointer;
+            animation: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: crimson;
+        }
+
+        footer{
+            background-color: #8da5d9;
+            color: #faf9f8;
+            padding: 15px;
+            text-align: center;
+            margin-top: 10px ;
+            
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="mine">
+        <div class=""></div>
+        <div class="content">
+
+            <h1>You're INVITED!</h1>
+            <H2>join Us for an Unforgettable Night.</H2>
+            <div class="daiteles">
+                <p><i class="fas fa-calendar alt"></i> Date:octobar 20/2026</p>
+                <p><i class="fas fa-clock alt"></i>Time: 8:00 pm</p>
+                <p><i class="fas fa-map-marker-alt alt"></i>location:banadir</p>
+            </div>
+              <a href="#rvsp" class="rvsp-btn">RSVP Now</a>
+        </div>
+      
+    </div>
+
+    <div class="container">
+        <h1>contact</h1>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder=" YourEmail" required>
+            <input type="text" placeholder="bassword" required>
+
+            <select required>
+                <option value="" disabled selected>HTML</option>
+                <option value="yes">CSS</option>
+                <option value="yes">Javascript</option>
+
+            </select>
+
+            <button class="submit">submit</button>
+        </form>
+    </div>
+
+
+      
+
+<footer>
+    &copy;2026  map-location
+
+</footer>
+</body>
+
+</html>

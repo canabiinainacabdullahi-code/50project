@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #fff;
+            background-color: #1a1a1a;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            background: url("https://dimg04.tripcdn.com/images/1n93d324x90row59y1370.jpg?proc=format/f_webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            z-index: 1;
+
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 10px 0;
+            animation: fadeIN 2s ease-in-out;
+        }
+
+        .detalis {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .detalis p {
+            margin: 10px 0;
+        }
+
+        .detalis i {
+            margin-right: 10px;
+            color: #34c32c;
+        }
+
+        .rvsp-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #ff6f61;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        .rvsp-btn:hover {
+            background-color: #ff3b2f;
+        }
+
+     
+            .rvsp-form{
+            padding: 50px 20px;
+            background-color: #2c2c2c;
+            text-align: center;
+        }
+
+        .rvsp-form h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .rvsp-form form{
+            max-width: 400px;
+            margin: 0 auto;
+
+        }
+
+        .rvsp-form input,
+        .rvsp-form select ,
+        .rvsp-form button{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            font-size: 1rem;
+            border-radius: 10px;
+
+            
+        }
+
+        .rvsp-form button{
+            background-color: #ff6f61;
+            color: #fff;
+            cursor: pointer;
+            transition:  background 0.3 ease;
+        }
+
+        .rvsp-form button:hover{
+            background-color: #ff3b2f;
+        }
+        
+
+        @-o-keyframes fadeIn{
+            form{
+                opacity: 0;
+            }
+
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay"> </div>
+        <div class="content">
+            <h1>You're INVITED!</h1>
+            <h2>JoinUs for an Unforgettable Night.</h2>
+            <div class="detalis">
+                <p><i class="fas fa-calendar-alt"></i>Date:desember 30/2026</p>
+                <p><i class="fas fa-clock"></i>Time: 8:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i>Location: silver hall:muqdishu</p>
+            </div>
+            <a href="#rvsp" class="rvsp-btn">RSVP Now</a>
+        </div>
+
+    </div>
+
+
+    <!--form-->
+    <div id="rvsp" class="rvsp-form">
+        <h2>RSVP</h2>
+        <form>
+            <input type="text" placeholder=" Enter Your Name" required>
+            <input type="Email" placeholder=" Enter Your Email" required>
+
+            <select required>
+                <option value="" disabled selected> Will you attend.</option>
+                <option value="yes">yes,i'llbe there!</option>
+                <option value="yes">No, I can't make it</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
